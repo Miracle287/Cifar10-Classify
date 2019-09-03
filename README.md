@@ -8,9 +8,11 @@ Python版Cifar-10数据集图片分类程序
 
 #### 环境
 
+Python环境：Anaconda, Python 3.6.8
+
 深度学习框架：TensorFlow、PyTorch
 
-开发环境: PyCharm
+IDE环境: PyCharm
 
 
 
