@@ -165,7 +165,7 @@ def process_train_data_distorted():
     if not os.path.exists(output_folder):
         os.makedirs(output_folder, exist_ok=True)
 
-    for root, sub_dirs, files in os.walk(os.path.join(input_folder)):
+    for root, sub_dirs, files in os.walk(input_folder):
         sub_dirs.sort()
         files.sort()
         # Browse all files
@@ -304,10 +304,10 @@ def show_pic(image, label):
 
 # 程序入口：数据预处理
 if __name__ == '__main__':
-    # process_train_data()
-    # process_train_data_distorted()
-    # process_test_data()
-    # process_test_data_distorted()
+    process_train_data()
+    process_train_data_distorted()
+    process_test_data()
+    process_test_data_distorted()
     save_image_and_label(input_dir=input_train_image_distorted_dir, output_dir=input_train_dir)
     save_image_and_label(input_dir=input_test_image_distorted_dir, output_dir=input_test_dir)
 

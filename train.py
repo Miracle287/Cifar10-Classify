@@ -89,7 +89,7 @@ def save_model(file):
 
 
 # 恢复模型
-def load_cpkl(file):
+def load_model(file):
     saver = tf.train.Saver()
     with tf.Session() as sess:
         # Restore variables from disk.
